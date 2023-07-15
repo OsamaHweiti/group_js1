@@ -13,7 +13,8 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 
 */
 // TASK 1 
-function fortuneteller(x,y,z,c){
+console.log(`----------------OSAMAS CODESS--------------`);
+function tellFortune(x,y,z,c){
     console.log(`You will be a ${x} in ${y},and married to ${z} with ${c} kids `)
 }
 tellFortune('software engineer', 'Jordan', 'Alice', 3);

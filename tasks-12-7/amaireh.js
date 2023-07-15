@@ -1,3 +1,5 @@
+ console.log(`Amaireh codes ------------------------------`);
+ 
  function tellFortune( c, l, p, j ){
    
     return `you will be a ${j} in ${l}, and mariied to ${p} with ${c} kids` ;
