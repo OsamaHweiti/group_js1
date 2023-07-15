@@ -300,7 +300,7 @@ Ex: shorterString("air","tr","car","github","by")
     //  var z2= prompt('enter 5 words3');
     //  var i2= prompt('enter 5 words4');
     //  var c2 =prompt('enter 5 words5');
-     shorterString(x2,y2,z2,i2,c2);
+   //  shorterString(x2,y2,z2,i2,c2);
 
 /*
 14
@@ -371,7 +371,15 @@ Ex: positive(-5)
 => 5
 
 */
+function positive(x){
+    if (x>=0)
+        return x
+            else 
+                return x*-1
+}
 
+console.log(`Positive function ${positive(5)}`);
+console.log(`Positive function ${positive(-5)}`);
 
 /*
 18
@@ -385,8 +393,10 @@ Ex: fullName("Adam","McCallen")
 Ex: fullName("Alex", "Mercer")
 => "Alex Mercer"
 */
-
-
+function fullName(x,y){
+    return x+" "+y;
+}
+console.log(`Fullname function :${fullName('Osama','HW')}`);
 /*
 19
 Write a function called average
@@ -400,7 +410,10 @@ Ex: average(5,7,9,3,5)
 => 5.8
 
 */
-
+function average(x,y,z,a,b){
+    return (x+y+z+a+b)/5;
+}
+console.log(`Avarge function ${average(6,7,2,9,14)}`);
 
 /*
 20
@@ -416,7 +429,10 @@ Ex: randomNumber()
 => 0.475
 
 */
-
+function randomNumber(){
+    return Math.random();
+}
+console.log(`Random number function ${randomNumber()}`);
 /*
 21
 Write a function called randomBetweenNumbers
@@ -430,8 +446,15 @@ Ex: randomBetweenNumbers(1,8)
 Ex: randomBetweenNumbers(3,100)
 => 23
 
+CSM 0
+TPM Device Enable firm
+Secure boot standaed
+os type UEFI mode
 */
 
+function randomBetweenNumbers(x,y){
+    return Math.floor(Math.random()*(y-x+1)+x);
+}
 
 /*
 22
@@ -453,7 +476,19 @@ Ex: scoreInUniversty(3)
 Ex: scoreInUniversty(71)
 => "C"
 */
-
+function scoreInUniversty(x){
+    if(x>=95 && x<=100){
+        return 'A'
+    }
+        else if(x>=85 && x<=94)
+            return 'B'
+                else if (x>=70 && x<=84)
+                    return 'C'
+                        else if (x>=50 && x<=69)
+                            return 'D'
+                                else if (x>=0 && x <=500)
+                                    return 'F'
+}
 
 /*
 23
@@ -472,7 +507,15 @@ Ex: counter()
 => 3
 
 */
+var counts = 0 ;
+function counter(){
+    return counts++;
+}
 
+console.log(`Counter function ${counter()}`);
+console.log(`Counter function ${counter()}`);
+console.log(`Counter function ${counter()}`);
+console.log(`Counter function ${counter()}`);
 
 /*
 24
@@ -505,3 +548,11 @@ Ex: resetCounter()
 Ex: counter()
 => 1
 */
+function resetCounter(){
+    counts = 0;
+    return counts;
+}
+console.log(`Counter reset function ${resetCounter()}`);
+console.log(`Counter function ${counter()}`);
+console.log(`Counter function ${counter()}`);
+console.log(`Counter reset function ${resetCounter()}`);
