@@ -16,7 +16,7 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 function fortuneteller(x,y,z,c){
     console.log(`You will be a ${x} in ${y},and married to ${z} with ${c} kids `)
 }
-
+tellFortune('software engineer', 'Jordan', 'Alice', 3);
 /*
 2
 Write a function named calculateDogAge that:
@@ -33,7 +33,7 @@ Ex: calculateDogAge(1);
 function calculateDogAge(y){
     console.log(`Your doggie is ${y*7} years old in dog years!`)
 }
-
+calculateDogAge(2);
 /*
 3
 Write a function named calculateSupply that:
@@ -65,7 +65,7 @@ Ex: greet("Adam")
 */
 
 function greeting(x){
-    console.log(`Hello ${x}`);
+    console.log(`Function greeting : Hello ${x}`);
 }
 greeting('Osama');
 
@@ -136,7 +136,7 @@ function cube(x){
     console.log( x * x * x);
 }
 
-cube(5);
+console.log(`Cube function :${cube(5)}`);
 /*
 8
 Write a function called multiply that:
@@ -150,7 +150,7 @@ Ex: multiply(5,4)
 function multiply(x,y){
     console.log(x*y);
 }
-multiply(7,8)
+console.log(`Multiply function :${multiply(3,4)}`);
 /*
 9
 Write a function called canIGetADrivingLicense that:
@@ -220,7 +220,7 @@ function largerNumber(x,y){
                 console.log(y);
         
 }
-largerNumber(3,10);
+console.log(`larger function : ${largerNumber(6,2)}`);
 
 
 /*
@@ -254,7 +254,7 @@ function smallerNubmer(x,y,z){
         console.log(z);
     
     }
-    smallerNubmer(20,30,2);
+   console.log(`smaller Function ${smallerNubmer(5,3,10)}`);
 
 /*
 13
