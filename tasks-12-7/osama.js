@@ -13,6 +13,9 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 
 */
 // TASK 1 
+function fortuneteller(x,y,z,c){
+    console.log(`You will be a ${x} in ${y},and married to ${z} with ${c} kids `)
+}
 
 /*
 2
@@ -27,6 +30,9 @@ Ex: calculateDogAge(1);
 => "Your doggie is 7 years old in dog years!"
 */
 
+function calculateDogAge(y){
+    console.log(`Your doggie is ${y*7} years old in dog years!`)
+}
 
 /*
 3
@@ -39,7 +45,14 @@ outputs the result to the screen like so:
 Ex: calculateSupply(30, 3);
 => 'You will need 76650 cups of tea to last you until the ripe old age of 100;
 */
-
+function calculateSupply(x,y,drink){
+    let needs= (100-x)*360;
+    console.log(`You will need ${y*needs} ${drink} to last you until the ripe old age of 100`)
+}
+//var r = Number(prompt("Enter your age "))
+//var u = Number(prompt("Enter your drink/eat amount per day "))
+//var i = prompt("Enter your what you drink/eat  ")
+calculateSupply(20,3,'sakki');
 
 /*
 4
@@ -51,6 +64,10 @@ Ex: greet("Adam")
 => "Hello Adam"
 */
 
+function greeting(x){
+    console.log(`Hello ${x}`);
+}
+greeting('Osama');
 
 /*
 5
@@ -67,8 +84,16 @@ function double('7') {
   return 2 * 'x';
 }
 */
+function double(cat) {
+    return 2 * x;
+  } // error here is is x is undefined
 
-
+  function double(/* 7 */) {
+    return 2 * 7;
+  } // error here is parmater must be a variable or null
+  function double(/* '7' */) {
+    return 2 * 'x';//same as up mush be variable or null and you can't multiply number with string
+  }
 
 /*
 6
@@ -76,6 +101,7 @@ fix these functions:
 func double1(x {
   return 2 * x ;
 }
+
 
 functiondouble2 x)
 return 2 * x;
@@ -85,7 +111,18 @@ function (x) double3 {
   return 2 * x;
 
 */
-
+function double1(x) {
+    return 2 * x ;
+  }
+  
+  
+  function double2 (x){
+  return 2 * x;
+  }
+  
+  function  double3 (x){
+    return 2 * x;
+  }
 
 /*
 7
@@ -95,8 +132,11 @@ accept 1 parameter and calculate the cube of this number
 Ex: cube(4)
 => 64
 */
+function cube(x){
+    console.log( x * x * x);
+}
 
-
+cube(5);
 /*
 8
 Write a function called multiply that:
@@ -107,8 +147,10 @@ Ex: multiply(3,4)
 Ex: multiply(5,4)
 => 20
 */
-
-
+function multiply(x,y){
+    console.log(x*y);
+}
+multiply(7,8)
 /*
 9
 Write a function called canIGetADrivingLicense that:
@@ -126,7 +168,14 @@ Ex: canIGetADrivingLicense(20)
 => "yes you can"
 
 */
-
+function canIGetADrivingLicense(x){
+    if(x>=20){
+        console.log('Yes you can')
+    }
+    else
+    console.log(`Please come back back after ${20-x} years to get one`)
+}
+canIGetADrivingLicense(20);
 
 /*
 10
@@ -143,6 +192,15 @@ Ex: sameLength("tree","car")
 => false
 */
 
+function sameLength(str1,str2){
+    if (str1.length == str2.length)
+        console.log(true)
+            else
+                console.log(false);
+}
+sameLength("tree","clue")
+sameLength("tree","car")
+
 /*
 11
 Write a function called largerNubmer
@@ -155,6 +213,14 @@ Ex: largerNubmer(5,6)
 Ex: largerNubmer(5,3)
 => 5
 */
+function largerNumber(x,y){
+    if (x>y)
+        console.log(x)
+            else
+                console.log(y);
+        
+}
+largerNumber(3,10);
 
 
 /*
@@ -176,6 +242,19 @@ Ex: smallerNubmer(5,3,3)
 => 3
 
 */
+
+function smallerNubmer(x,y,z){
+    if(x<y && x<z){
+        console.log(x);
+    }
+        else if (y<x && y<z){
+            console.log(y);
+        }
+        else 
+        console.log(z);
+    
+    }
+    smallerNubmer(20,30,2);
 
 /*
 13
@@ -202,6 +281,26 @@ Ex: shorterString("air","tr","car","github","by")
 => by
 
 */
+
+    function shorterString(x,y,z,i,c){
+        let str = [x,y,z,i,c];
+            var short = x ;
+                for (var i = 1 ; i<str.length ; i++)
+                {
+                    if (str[i].length < short.length)
+                        short = str[i];
+                    
+                    
+                }
+                console.log(short);
+    }
+
+    //  var x2 = prompt('enter 5 words1');
+    //  var y2= prompt('enter 5 words2');
+    //  var z2= prompt('enter 5 words3');
+    //  var i2= prompt('enter 5 words4');
+    //  var c2 =prompt('enter 5 words5');
+     shorterString(x2,y2,z2,i2,c2);
 
 /*
 14
@@ -232,6 +331,13 @@ Ex: isEven(2)
 
 */
 
+    function isEven(x){
+        if (x % 2 ==0)
+            console.log(true)
+                else
+                    console.log(false)
+    }
+
 
 /*
 16
@@ -246,8 +352,13 @@ Ex: isOdd(5)
 => true
 
 */
-
-
+function isOdd(x){
+    if (x % 2 ==1)
+        console.log(true)
+            else
+                console.log(false)
+}
+isOdd(5);
 /*
 17
 Write a function called positive
